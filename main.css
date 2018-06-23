@@ -17,5 +17,5 @@ body {
 .title {
     margin: 20px 12px;
     font-size: calc(40px + (60-40)*(100vw - 400px)/ (2500-400));
-    font-weight: 300;
+    font-weight: 400;
 }
