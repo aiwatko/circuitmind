@@ -6,16 +6,52 @@ body {
 
 .template {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 12px;
     height: 100vh;
-    background: black url('rectangle.svg') repeat;
-    background-size: 12px;
+    background: black;
+    background-size: 10px;
     color: white;
 }
 
 .title {
-    margin: 20px 12px;
-    font-size: calc(40px + (60-40)*(100vw - 400px)/ (2500-400));
-    font-weight: 400;
+    margin: 5px 0;
+    font-size: calc(60px + (150-60)*(100vw - 400px)/ (2500-400));
+    font-weight: 600;
+    letter-spacing: 2px
+}
+
+.contacts {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    margin: 20px;
+    font-size: calc(15px + (20-15)*(100vw - 400px)/ (2500-400));
+}
+
+.contact-details:nth-of-type(2){
+    text-align: right;
+}
+
+hr {
+    width: 100%;
+}
+
+.link {
+    display: inline-block;
+    font-size: calc(15px + (25-15)*(100vw - 400px)/ (2500-400));
+}
+
+.link, 
+.link:visited,
+.link:hover {
+    color: white;
+    text-decoration: none;
 }
