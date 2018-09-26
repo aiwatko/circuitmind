@@ -1,57 +1,90 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  height: 100vh;
+  font-family: 'Nunito Sans', sans-serif;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-position: center; 
 }
 
 .template {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 12px;
-    height: 100vh;
-    background: black;
-    background-size: 10px;
-    color: white;
+  background: rgba(5, 29, 53, 0.85);
+  height: 100%;
+  color: rgb(203, 203, 203);
 }
 
-.title {
-    margin: 5px 0;
-    font-size: calc(60px + (150-60)*(100vw - 400px)/ (2500-400));
-    font-weight: 600;
-    letter-spacing: 2px
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-width: 780px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
-.contacts {
-    display: flex;
-    flex-direction: row;
-}
-
-.contact-details {
-    display: flex;
-    flex-direction: column;
-    font-weight: 100;
-    margin: 20px;
-    font-size: calc(15px + (20-15)*(100vw - 400px)/ (2500-400));
-}
-
-.contact-details:nth-of-type(2){
-    text-align: right;
-}
-
-hr {
-    width: 100%;
+.header {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .link {
-    display: inline-block;
-    font-size: calc(15px + (25-15)*(100vw - 400px)/ (2500-400));
+  font-size: 25px;
+  margin-top: 20px;
 }
 
 .link, 
 .link:visited,
 .link:hover {
-    color: white;
-    text-decoration: none;
+  color: rgb(203, 203, 203);
+  text-decoration: none;
+}
+
+.content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .content {
+    flex-direction: column;
+  }
+}
+
+.logo {
+  width: 150px;
+  margin-right: 20px;
+  margin-top: -40px;
+}
+
+.title {
+  line-height: .85;
+  margin: 5px 0 5px -5px;
+  font-size: 100px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 600px) {
+  .title {
+    margin: 20px 0;
+    font-size: 70px;
+    text-align: center;
+  }
+}
+
+.subtitle {
+  margin: 5px 0;
+  font-weight: normal;
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 27px;
+    text-align: center;
+  }
 }
