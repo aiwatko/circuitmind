@@ -106,7 +106,6 @@ body {
 
 .team {
   display: flex;
-  height: 100%;
   margin-left: -20px;
   align-items: center;
   justify-content: center;
