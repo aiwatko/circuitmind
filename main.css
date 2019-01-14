@@ -1,8 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  height: 100vh;
-  height: 100vh;
+  min-height: 100vh;
   font-family: 'Nunito Sans', sans-serif;
   background-image: url("bg.jpg");
   background-size: cover;
@@ -11,14 +10,14 @@ body {
 
 .template {
   background: rgba(5, 29, 53, 0.85);
-  height: 100%;
+  min-height: 100vh;
   color: rgb(203, 203, 203);
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: 100vh;
   max-width: 780px;
   padding: 0 20px;
   margin: 0 auto;
@@ -54,7 +53,7 @@ body {
 
 .content {
   display: flex;
-  height: 100%;
+  min-height: 80vh;
   align-items: center;
   justify-content: center;
 }
@@ -106,6 +105,7 @@ body {
 
 .team {
   display: flex;
+  min-height: 80vh;
   margin-left: -20px;
   align-items: center;
   justify-content: center;
