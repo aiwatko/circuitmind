@@ -1,9 +1,12 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
 
 import Anchor from '../components/anchor';
 import LogoImg from '../static/logo.svg';
+import Home from '../home';
+import Contact from '../contact';
 
 const HeaderStyled = styled.header`
   display: flex;

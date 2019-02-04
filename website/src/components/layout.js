@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Header from './header'
 import GlobalStyles from '../materials/globalStyles'
 
+
 const Wrapper = styled.div`
   background: rgba(5, 29, 53, 0.85);
   min-height: 100vh;
@@ -40,7 +41,7 @@ const Layout = ({ children }) => (
 		<Wrapper>
 			<Container>
 				<Header />
-				{children}
+        {children}
 			</Container>
 		</Wrapper>
 	</React.Fragment>
