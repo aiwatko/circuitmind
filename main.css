@@ -175,11 +175,13 @@ body {
 
 .contact__elements {
   width: 100%;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }
 
 .contact__element {
+  position: relative;
   max-width: 50%;
   padding: 0 20px 20px 20px;
 }
@@ -198,9 +200,19 @@ body {
   padding-bottom: 20px;
 }
 
+.contact__address h2 {
+  margin-top: 0;
+}
+
 .contact__address address {
   font-style: normal;
   font-size: 20px;
+}
+
+#map {
+  min-width: 320px;
+  max-width: 100%;
+  height: 300px;
 }
 
 .about {
@@ -232,4 +244,20 @@ body {
   line-height: 1.5;
   padding: 0 20px 20px 20px;
   max-width: 650px;
+}
+
+.about__iframe-container {
+  position: relative;
+  padding-bottom: 56%;
+  height: 0;
+  width: 100%;
+}
+
+.about__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
