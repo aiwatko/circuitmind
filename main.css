@@ -44,9 +44,17 @@ body {
   margin-left: 20px;
 }
 
+.inline-link {
+  display: inline-block;
+  font-size: 20px;
+}
+
 .link, 
 .link:visited,
-.link:hover {
+.link:hover,
+.inline-link, 
+.inline-link:visited,
+.inline-link:hover {
   color: white;
   text-decoration: none;
 }
@@ -107,7 +115,7 @@ body {
   display: flex;
   min-height: 80vh;
   margin-left: -20px;
-  align-items: center;
+  align-items: top;
   justify-content: center;
 }
 
@@ -142,4 +150,55 @@ body {
   max-width: 200px;
   border-radius: 50%;
   filter: sepia(70%);
+}
+
+.contact {
+  display: flex;
+  align-items: top;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+  color: white;
+}
+
+.contact__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  width: 100%;
+  min-height: 80vh;
+  padding-top: 20px;
+  background: rgba(255, 255, 255, .2);
+}
+
+.contact__elements {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.contact__element {
+  max-width: 50%;
+  padding: 0 20px 20px 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact__elements {
+    flex-direction: column;
+  }
+
+  .contact__element {
+    max-width: 100%;
+  }
+}
+
+.contact__address {
+  padding-bottom: 20px;
+}
+
+.contact__address address {
+  font-style: normal;
+  font-size: 20px;
 }
