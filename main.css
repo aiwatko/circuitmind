@@ -293,3 +293,7 @@ body {
 ol, ul {
   padding-left: 20px;
 }
+
+body.careers__desc {
+  background-image: none;
+}
