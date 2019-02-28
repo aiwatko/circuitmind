@@ -136,9 +136,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1 1 0;
   text-align: center;
-  min-height: 600px;
   margin-left: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
