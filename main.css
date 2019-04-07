@@ -74,6 +74,10 @@ a:focus {
   transition: transform .5s ease-in-out;
 }
 
+.header__links-container.nav-opened {
+  transform: translateX(0);
+}
+
 .nav-link {
   padding: 20px 0;
   text-decoration: none;
