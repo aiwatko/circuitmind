@@ -10,6 +10,10 @@ body {
   font-weight: 300;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 .template {
   background: rgba(5, 29, 53, 0.85);
   min-height: 100vh;
@@ -114,7 +118,6 @@ body {
 .team {
   display: flex;
   min-height: 80vh;
-  margin-left: -20px;
   align-items: top;
   justify-content: center;
   color: white;
@@ -123,7 +126,7 @@ body {
 .team__inner {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 @media only screen and (max-width: 600px) {
@@ -132,14 +135,32 @@ body {
   }
 }
 
+.team-member__container {
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px; 
+}
+
+.team-member__container:nth-of-type(2n) {
+  padding-left: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .team-member__container {
+    width: auto;
+  }
+
+  .team-member__container:nth-of-type(2n) {
+    padding-left: 0;
+  }
+}
+
 .team-member {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-left: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  min-height: 640px;
   padding: 20px;
   color: white;
   background: rgba(255, 255, 255, .2);
