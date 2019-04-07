@@ -3,7 +3,7 @@ body {
   padding: 0;
   min-height: 100vh;
   font-family: 'Nunito Sans', sans-serif;
-  background-image: url("bg.jpg");
+  background-image: url("static/bg.jpg");
   background-size: cover;
   background-position: center; 
   font-size: 20px;
