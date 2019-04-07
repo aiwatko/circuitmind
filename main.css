@@ -338,11 +338,6 @@ a:focus {
   border: 0;
 }
 
-.about__hiring {
-  padding: 0 20px;
-  margin-bottom: 40px;
-}
-
 .career {
   display: flex;
   align-items: flex-start;
