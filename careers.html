@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,6 +13,8 @@
   <!-- End Google Analytics -->
   <link rel="stylesheet" type="text/css" href="main.css?v=1.4">
   <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,900" rel="stylesheet">
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
   <meta charset="utf-8">
   <title>Circuit mind</title>
   <meta name="description"
@@ -24,7 +26,7 @@
     <div class="container">
       <header class="header">
         <div class="header__logo-container">
-          <a class="hidden" href="index.html"><img class="header__logo" src="static/logo.svg" alt="Logo" /></a>
+          <a href="index.html"><img class="header__logo" src="static/logo.svg" alt="Logo" /></a>
         </div>
         <div class="header__links-container">
           <a class="link" href="about.html">mission</a>
@@ -33,11 +35,26 @@
           <a class="link" href="contact.html">contact</a>
         </div>
       </header>
-      <main class="content">
-        <img class="logo" src="static/logo.svg" alt="Logo" />
-        <div>
-          <h1 class="title">Circuit <br />Mind</h1>
-          <h2 class="subtitle">AI designs electronics</h2>
+      <main class="careers">
+        <div class="careers__inner">
+          <h1 class="hidden">Join us!</h1>
+          <div class="careers__position-container">
+            <div class="careers__position">
+              <h2>Senior Electronic Engineer</h2>
+              <p>Your mission is to design printed circuit boards for clients and
+                inform the architecture of Circuit Mind’s core software technology by providing the electronic
+                design knowledge to the rest of the engineering team.</p>
+              <a href="careers/senior-electronic-engineer.html" class="inline-link">Read more about this position</a>
+            </div>
+          </div>
+          <div class="careers__position-container">
+            <div class="careers__position">
+              <h2>Lead Software Engineer</h2>
+              <p>Your mission is to create the software process and lead the definition, planning, development and
+                testing of the entire stack of Circuit Mind’s software applications.</p>
+              <a href="careers/lead-software-engineer.html" class="inline-link">Read more about this position</a>
+            </div>
+          </div>
         </div>
       </main>
     </div>
